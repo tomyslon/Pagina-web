@@ -1,30 +1,22 @@
-*{
-  margin:0;
+
+body{
+  background-image: url(https://img.freepik.com/free-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-63641.jpg?w=2000)
+  
 }
-
-
-body{background-color: white;background-image: url(https://us.123rf.com/450wm/maxmega/maxmega1703/maxmega170300006/maxmega170300006-fast-food-texture-background.jpg?ver=6)}
-#titular{background: white; color: #42f572;font-size: 50px;font-family: system-ui;display:inline}
-#descripcion{font-weight: bold; background: white; display: inline}
+#titular{background-color: white; color: #42f572;font-size: 30px;font-family: system-ui; display:inline}
+#descripcion{font-weight: bold; background: white; display: inline;margin-top: 30px}
 .elemento{
     color: white;
 }
-
-main{
-  margin-bottom: 30px;
-}
-
-
-header{
-  background: white;
-}
 nav{
   position:fixed;
+  align-items: 'center';
+  justify-content: space-between;
 
 }
 nav ul {
   list-style: none;
-  margin: 0;
+  margin: 10px;
   padding: 0;
   display: flex;
   font-family: fantasy;
@@ -46,6 +38,11 @@ nav a {
 nav a:hover {
   background-color: #eee;
 }
+
+
+
+
+
 
 img {
   max-width: 100%;

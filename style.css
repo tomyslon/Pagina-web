@@ -1,33 +1,56 @@
-body{background-color: white;}
-#titular{color: #42f572;font-size: 100px}
+*{
+  margin:0;
+}
 
+
+body{background-color: white;background-image: url(https://us.123rf.com/450wm/maxmega/maxmega1703/maxmega170300006/maxmega170300006-fast-food-texture-background.jpg?ver=6)}
+#titular{background: white; color: #42f572;font-size: 50px;font-family: system-ui;display:inline}
+#descripcion{font-weight: bold; background: white; display: inline}
 .elemento{
     color: white;
 }
 
-.margenes{margin: 50px
+main{
+  margin-bottom: 30px;
+}
 
-} /* foeofo*/
 
+header{
+  background: white;
+}
+nav{
+  position:fixed;
 
-ul {
-  list-style-type: none;
+}
+nav ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  display: flex;
+  font-family: fantasy;
 }
 
-li {
-  float: left;
+nav li {
+  margin-right: 10px;
 }
 
 
-li a {
+nav a {
   display: block;
-  color: white;
-  text-align: center;
+  padding: 10px;
   text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #eee;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  max-height: 1000px; /* opcional: establece la altura máxima de la imagen */
 }
 
 

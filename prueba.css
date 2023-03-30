@@ -1,0 +1,76 @@
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 0 40px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin-left: 40px;
+}
+
+.navbar-menu li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.navbar-menu a {
+  color: #666;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar-menu a:hover {
+  color: #000;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right .navbar-menu {
+  margin-right: 20px;
+}
+
+.navbar-right button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.navbar-right button:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+.navbar-search, .navbar-join, .navbar-login {
+  display: flex;
+  align-items:center;}

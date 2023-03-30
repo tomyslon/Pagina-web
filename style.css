@@ -3,14 +3,15 @@ body{
   background-image: url(https://img.freepik.com/free-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-63641.jpg?w=2000)
   
 }
-#titular{background-color: whitesmoke; color: #42f572; font-size: 25px;font-family: fantasy ; display:inline; font-weight: bold;margin-right: 700px;}
+#titular{background-color: whitesmoke; color: #42f572; font-size: 25px;font-family:fantasy; display:inline; font-weight: bold; margin-right: 700px;}
 
 /* ACA ARMO LOS ESPACIOS DE LA NAV BAR Y LE SACO EL SUBRALLADO Y EL COLOR*/
 
 img {
   max-width: 100%;
   height: fit-content;
-  max-height: 1000px; /* opcional: establece la altura máxima de la imagen */
+  max-height: 500;
+  align-content: center /* opcional: establece la altura máxima de la imagen */
 }
 * {
   box-sizing: border-box;
@@ -33,26 +34,7 @@ header {
 }
 
 /* NAVBAR STYLES */
-.navbar {
-  background-color: #eee;
-  color: #333;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  width: 100%;
-  font-family: fantasy;
-}
 
-
-.navbar a {
-  color: #333;
-  display: block;
-  font-weight: bold;
-  font-size: 18px;
-  text-decoration: none;
-  padding: 0 10px;
-}
 
 nav ul {
   list-style: none;
@@ -81,6 +63,7 @@ header {
   align-items: center;
   height: 75px;
   width: 100%;
+  font-family: fantasy;
 }
 
 .navbar-title {
@@ -102,9 +85,10 @@ header {
   padding: 0 5px;
 }
 
-.navbar a:hover {
-  background-color: #ddd;
-}
+
+.navbar-item a:hover {
+    color: #b71c1c; }
+
 header {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -115,3 +99,4 @@ header {
 }
 
 h2{margin-top: 100px;}
+

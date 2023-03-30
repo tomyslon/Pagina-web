@@ -8,16 +8,34 @@
     <style>
         body{background-color: blue;}
     </style>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prueba.css">
 </head>
 <body>
-    <h1 id="titular" class="margenes" >El titulo de mi web</h1> <!-- Este metodo es in line, porque es en la misma linea-->
-    <h2> hola
-    <ul id="navbar">
-        <li class="navitems"> <a href="https://www.w3schools.com/css/css_list.asp">Primera cosa</a></li>
-        <li class="navitems">Segunda cosa</li>
-    </ul>
-    
+    <header>
+        <nav class="navbar">
+          <div class="navbar-left">
+            <a href="#" class="navbar-logo"><img src="https://www.allrecipes.com/static/img/brand/logo-primary.png" alt="Allrecipes"></a>
+            <ul class="navbar-menu">
+              <li><a href="#">Recipes</a></li>
+              <li><a href="#">Ingredients</a></li>
+              <li><a href="#">Holidays &amp; Events</a></li>
+              <li><a href="#">Our Products</a></li>
+              <li><a href="#">Cookware</a></li>
+              <li><a href="#">What's New</a></li>
+            </ul>
+          </div>
+          <div class="navbar-right">
+            <ul class="navbar-menu">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Meal Planner</a></li>
+              <li><a href="#">Shopping List</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+            <button class="navbar-search"><i class="fas fa-search"></i></button>
+            <button class="navbar-join"><i class="fas fa-user-plus"></i>Join</button>
+            <button class="navbar-login"><i class="fas fa-sign-in-alt"></i>Log In</button>
+          </div>
+        </nav>
+      </header>
 </body>
-<img src="https://via.placeholder.com/600x400">
 </html>

@@ -4,7 +4,7 @@ body{
   
 }
 #titular{background-color: whitesmoke; color: #42f572; font-size: 25px;font-family:fantasy; display:inline; font-weight: bold; margin-right: 700px;}
-
+#descripcion{font-family: arial; font-weight: bold;}
 /* ACA ARMO LOS ESPACIOS DE LA NAV BAR Y LE SACO EL SUBRALLADO Y EL COLOR*/
 
 img {

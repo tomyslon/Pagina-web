@@ -23,6 +23,21 @@ Cascada--> Jerarquia de lo que se va dando
 
 RGB --> Red green blue
 
+Flexbox
 
+Display= Flex --> esto me va a permitir que mi contenido se adapte a cualquier pantalla
 
+flex-direction: row/column
+row-reverse/column-reverse
+
+Hay 2 ejes:
+- Eje principal
+- Eje transversal
+
+PROPIEDADES DE LOS FLEX BOX Y FLEX ITEMS
+
+justify-content: --> el mas lindo es space-evenly
+Flex-flow:--?=> combinacion entre flex direction y flex-wrap
+
+align-items: la alineacion es vertical
 

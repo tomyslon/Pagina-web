@@ -1,102 +1,280 @@
 
-body{
-  background-image: url(https://img.freepik.com/free-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-63641.jpg?w=2000)
+
+/* Este formato me sirve para 
+CELULAR */
+/* RECORDAR QUE EL DIV EN ESTE CASO ES #CELULAR */
+
+
+@media  screen and (max-width:580px) {
+  footer{
+    background-color: red;
+    
+  }
+  #computadora{
+    display: none;
+  }
+  #celular{
+    display: flex;
+  }
+
+  footer{
+    background-color: red;
+    
+  }
+  #computadora{
+    
+    display: block;
+  }
+  #celular{
+    
+    display: none;
+  }
+
   
+  body{
+    background-image: url(https://img.freepik.com/free-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-63641.jpg?w=2000)
+    
+  }
+  #titular{ color: #42f572; font-size: 25px;font-family:fantasy; display:inline; font-weight: bold; margin-right: 700px;}
+  #descripcion{font-family: arial; font-weight: bold; font-size: 100%; margin: 5px;}
+  /* ACA ARMO LOS ESPACIOS DE LA NAV BAR Y LE SACO EL SUBRALLADO Y EL COLOR*/
+
+  img {
+    max-width: 100%;
+    height: fit-content;
+    max-height: 500;
+    align-content: center /* opcional: establece la altura máxima de la imagen */
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  /* HEADER STYLES */
+  header {
+    box-shadow: 0 7px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  /* NAVBAR STYLES */
+
+
+  nav ul {
+    list-style: none;
+    display:flex;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  /* HEADER STYLES */
+  header {
+    box-shadow: 0 7px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  /* NAVBAR STYLES */
+  .navbar {
+    background-color: whitesmoke;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    font-family: fantasy;
+  }
+
+  .navbar-title {
+    font-family: fantasy;
+    font-size: 25px;
+    margin: 10px;
+  }
+
+  .navbar li {
+    margin: 10px;
+  }
+
+  .navbar a {
+    background-color: whitesmoke ;
+    color: #333;
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0 5px;
+  }
+
+
+  .navbar-item a:hover {
+      color: #b71c1c; }
+
+  header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  h2{margin-top: 100px;}
 }
-#titular{background-color: whitesmoke; color: #42f572; font-size: 25px;font-family:fantasy; display:inline; font-weight: bold; margin-right: 700px;}
-#descripcion{font-family: arial; font-weight: bold;}
-/* ACA ARMO LOS ESPACIOS DE LA NAV BAR Y LE SACO EL SUBRALLADO Y EL COLOR*/
-
-img {
-  max-width: 100%;
-  height: fit-content;
-  max-height: 500;
-  align-content: center /* opcional: establece la altura máxima de la imagen */
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-/* HEADER STYLES */
-header {
-  background-color: #fff;
-  box-shadow: 0 7px 4px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-/* NAVBAR STYLES */
-
-
-nav ul {
-  list-style: none;
-  display:flex;
-  margin: 0;
-  padding: 0;
+@media  screen and (max-width:580px) {
+  footer{
+    background-color: red;
+    
+  }
+  #computadora{
+    display: none;
+  }
+  #celular{
+    display: flex;
+  }
 }
 
 
-/* HEADER STYLES */
-header {
-  background-color: #fff;
-  box-shadow: 0 7px 4px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+/* Este formato me sirve para 
+COMPUTADORA */
+
+/* RECORDAR QUE EL DIV EN ESTE CASO ES #COMPUTADORA */
+@media  screen and (min-width:580px) {
+  footer{
+    background-color: red;
+    
+  }
+  #computadora{
+    
+    display: block;
+  }
+  #celular{
+    
+    display: none;
+  }
+
+  
+  body{
+    background-image: url(https://img.freepik.com/free-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-63641.jpg?w=2000)
+    
+  }
+  #titular{ color: #42f572; font-size: 25px;font-family:fantasy; display:inline; font-weight: bold; margin-right: 700px;}
+  #descripcion{font-family: arial; font-weight: bold;}
+  /* ACA ARMO LOS ESPACIOS DE LA NAV BAR Y LE SACO EL SUBRALLADO Y EL COLOR*/
+
+  img {
+    max-width: 100%;
+    height: fit-content;
+    max-height: 500;
+    align-content: center /* opcional: establece la altura máxima de la imagen */
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  /* HEADER STYLES */
+  header {
+    box-shadow: 0 7px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  /* NAVBAR STYLES */
+
+
+  nav ul {
+    list-style: none;
+    display:flex;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  /* HEADER STYLES */
+  header {
+    box-shadow: 0 7px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  /* NAVBAR STYLES */
+  .navbar {
+    background-color: whitesmoke;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    font-family: fantasy;
+  }
+
+  .navbar-title {
+    font-family: fantasy;
+    font-size: 25px;
+    margin: 10px;
+  }
+
+  .navbar li {
+    margin: 10px;
+  }
+
+  .navbar a {
+    background-color: whitesmoke ;
+    color: #333;
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0 5px;
+  }
+
+
+  .navbar-item a:hover {
+      color: #b71c1c; }
+
+  header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  h2{margin-top: 100px;}
 }
 
-/* NAVBAR STYLES */
-.navbar {
-  background-color: whitesmoke;
-  color: #333;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 75px;
-  width: 100%;
-  font-family: fantasy;
+
+
+
+@media  screen and (max-width:580px) {
+  footer{
+    background-color: red;
+    
+  }
+  #computadora{
+    display: none;
+  }
+  #celular{
+    display: flex;
+  }
 }
-
-.navbar-title {
-  font-family: fantasy;
-  font-size: 25px;
-  margin: 10px;
-}
-
-.navbar li {
-  margin: 10px;
-}
-
-.navbar a {
-  color: #333;
-  display: block;
-  font-weight: bold;
-  font-size: 18px;
-  text-decoration: none;
-  padding: 0 5px;
-}
-
-
-.navbar-item a:hover {
-    color: #b71c1c; }
-
-header {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-h2{margin-top: 100px;}
-

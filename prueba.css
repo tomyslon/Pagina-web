@@ -1,76 +1,40 @@
-header {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+body{
+    background: whitesmoke;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 75px;
-  padding: 0 40px;
+.container {  
+    display: grid;
+    grid-template-columns: 1.1fr 1.1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+
+
+}
+  
+.COMIDA { grid-area: 1 / 1 / 2 / 3; }
+.COMIDA h1{
+padding: 8%;
+background-color: blue;
+}
+.SALADO { 
+grid-area: 2 / 1 / 3 / 2;
+font-size: 3vw;
+padding: 5%;
+text-align: center;
+text-decoration: none;
 }
 
-.navbar-left {
-  display: flex;
-  align-items: center;
+.roundedfloat-left{
+    width: 100%;
+    height: 100%;
+    padding: 1%;
 }
 
-.navbar-logo img {
-  height: 50px;
-}
+.DULCE { grid-area: 2 / 2 / 3 / 3; }
 
-.navbar-menu {
-  display: flex;
-  list-style: none;
-  margin-left: 40px;
-}
+.TRAGOS { grid-area: 3 / 1 / 4 / 2; }
 
-.navbar-menu li:not(:last-child) {
-  margin-right: 20px;
-}
-
-.navbar-menu a {
-  color: #666;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.navbar-menu a:hover {
-  color: #000;
-}
-
-.navbar-right {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-right .navbar-menu {
-  margin-right: 20px;
-}
-
-.navbar-right button {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  color: #666;
-  font-size: 14px;
-  font-weight: 500;
-  margin-left: 20px;
-  padding: 10px 20px;
-  text-transform: uppercase;
-}
-
-.navbar-right button:hover {
-  cursor: pointer;
-  background-color: #f2f2f2;
-}
-
-.navbar-search, .navbar-join, .navbar-login {
-  display: flex;
-  align-items:center;}
+.RECOMENDACIONES { grid-area: 3 / 2 / 4 / 3; }
+  
+  

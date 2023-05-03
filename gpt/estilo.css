@@ -1,0 +1,25 @@
+h1 {
+	margin-top: 20px;
+}
+
+/* Give all p tags a margin bottom of 20px */
+p {
+	margin-bottom: 20px;
+}
+
+/* Give all columns a border to make them easier to see */
+.col-md-6 {
+    display: block;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.col-lg-6{
+    display: block;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.navbar{
+    position: sticky;
+}

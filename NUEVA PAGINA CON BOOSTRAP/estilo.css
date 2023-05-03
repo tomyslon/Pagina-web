@@ -1,3 +1,6 @@
+body{
+    background-color: whitesmoke;
+}
 h1 {
 	margin-top: 20px;
 }
@@ -12,14 +15,24 @@ p {
     display: block;
     justify-content: space-around;
     padding: 2%;
+    align-items: center;
 }
 
 .col-lg-6{
-    display: block;
-    justify-content: space-around;
+    display: inline-block;
+    justify-content: center;
     padding: 2%;
+    align-items: center;
 }
+
 
 .navbar{
     position: sticky;
 }
+
+.img-fluid{
+    height: 660vw;
+    width: fit-content;
+    object-fit: cover;
+}
+

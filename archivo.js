@@ -23,3 +23,5 @@ console.log(array1);
     
 array1.push(3.14);
 console.log(array1);
+
+Element.style.backgroundcolor.property= white

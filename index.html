@@ -14,22 +14,36 @@
 <body>
   <!-- LANDING PAGE-->
   <header>
-    <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
+    <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top justify-content-between">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="./material/LOGO FINAL.png" alt="" width="35" height="60">
-          <span class="navbar-brand mb-0 h1">Bebiendolo</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-            <a class="nav-link" href="alcohol.html">Tragos</a>
-            <a class="nav-link" href="energizantes.html">Bebidas energizantes</a> 
-            <a class="nav-link" href="energizantes.html">Naturales</a>
-            <a class="nav-link" href="cafe.html">Cafe</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li>
+            <a class="navbar-brand" href="index.html">
+              <img src="./material/LOGO FINAL.png" alt="" width="35" height="60">
+              <span class="navbar-brand mb-0 h1">Bebiendolo</span>
+            </a>
+          </li>
+          <li>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </li>
+          <ul>
+
+          </ul>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link" href="alcohol.html">Tragos</a>
+              <a class="nav-link" href="energizantes.html">Bebidas energizantes</a> 
+              <a class="nav-link" href="naturales.html">Naturales</a>
+              <a class="nav-link" href="cafe.html">Cafe</a>
+              <a class="navbar-brand me-2" href="shoppingcart.html">
+                <img src="./material/shopping cart.jpeg" width="30" height="30" alt="">
+              </a>
+        
+
           </div>
         </div>
       </div>
@@ -188,102 +202,7 @@
       </div>
     </div>
   </div>
-  <div class="shopping-cart">
-    <!-- Title -->
-    <div class="title">
-      Shopping Bag
-    </div>
   
-    <!-- Product #1 -->
-    <div class="item">
-      <div class="buttons">
-        <span class="delete-btn"></span>
-        <span class="like-btn"></span>
-      </div>
-  
-      <div class="image">
-        <img src="item-1.png" alt="" />
-      </div>
-  
-      <div class="description">
-        <span>Common Projects</span>
-        <span>Bball High</span>
-        <span>White</span>
-      </div>
-  
-      <div class="quantity">
-        <button class="plus-btn" type="button" name="button">
-          <img src="plus.svg" alt="" />
-        </button>
-        <input type="text" name="name" value="1">
-        <button class="minus-btn" type="button" name="button">
-          <img src="minus.svg" alt="" />
-        </button>
-      </div>
-  
-      <div class="total-price">$549</div>
-    </div>
-  
-    <!-- Product #2 -->
-    <div class="item">
-      <div class="buttons">
-        <span class="delete-btn"></span>
-        <span class="like-btn"></span>
-      </div>
-  
-      <div class="image">
-        <img src="item-2.png" alt=""/>
-      </div>
-  
-      <div class="description">
-        <span>Maison Margiela</span>
-        <span>Future Sneakers</span>
-        <span>White</span>
-      </div>
-  
-      <div class="quantity">
-        <button class="plus-btn" type="button" name="button">
-          <img src="plus.svg" alt="" />
-        </button>
-        <input type="text" name="name" value="1">
-        <button class="minus-btn" type="button" name="button">
-          <img src="minus.svg" alt="" />
-        </button>
-      </div>
-  
-      <div class="total-price">$870</div>
-    </div>
-  
-    <!-- Product #3 -->
-    <div class="item">
-      <div class="buttons">
-        <span class="delete-btn"></span>
-        <span class="like-btn"></span>
-      </div>
-  
-      <div class="image">
-        <img src="item-3.png" alt="" />
-      </div>
-  
-      <div class="description">
-        <span>Our Legacy</span>
-        <span>Brushed Scarf</span>
-        <span>Brown</span>
-      </div>
-  
-      <div class="quantity">
-        <button class="plus-btn" type="button" name="button">
-          <img src="plus.svg" alt="" />
-        </button>
-        <input type="text" name="name" value="1">
-        <button class="minus-btn" type="button" name="button">
-          <img src="minus.svg" alt="" />
-        </button>
-      </div>
-  
-      <div class="total-price">$349</div>
-    </div>
-  </div>
 </main>
 
 <script src="js/categorias.js"></script>

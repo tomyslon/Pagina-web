@@ -7,19 +7,21 @@
 body{
     background-color: var(--orange);
     font-family: system-ui;
-    overflow: hidden;
+    overflow: auto;
 }
+
 .container{
     width:1200px;
     border:1px solid var(--white);
     max-width: 100%;
-    margin:50px auto 0;
+    margin:100px auto 0;
     display: grid;
     grid-template-columns: 200px auto 300px;
-    padding:20px;
+    padding:10px;
     border-radius: 30px;
     min-height: 80vh;
 }
+
 .container .menu{
     background-color: var(--white);
     border-top-left-radius: 30px;
@@ -167,14 +169,16 @@ body{
 .cart .item{
     transition: 0.5s;
     border-bottom: 1px solid var(--light);
+    margin-top:20px;
 }
 .cart .name{
     padding:20px;
-    height:40px;
+    height:60px;
     font-weight: bold;
     font-size: xx-large;
-    border-bottom:1px solid var(--light)
 }
+
+
 .danger{
     box-shadow: 0 10px 10px var(--orange);
     transform: translate(0,-10px);
@@ -185,3 +189,12 @@ body{
 .cart .remove{
     display: inline-block!important;
 }
+
+.menu .logoo {
+    display: block;
+    margin-top: 25px;
+    width: 80px;
+    height: auto;
+    margin-left: 35px;
+  }
+  

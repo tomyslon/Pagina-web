@@ -29,17 +29,6 @@ p {
     object-fit: cover;
 }
 
-header {
-    text-align:center;
-    color: white;
-}
-
-nav{
-    background-color: grey;
-    size-adjust: 10px;
-    color: black;
-}
-
 .row{
     margin-top: 100px;
     justify-content: space-around;
@@ -54,6 +43,13 @@ nav{
 .card{
     margin-bottom: 5%;
 }
+
+
+header {
+    text-align:center;
+    color: white;
+}
+
 
 
 a.navbar-brand{
@@ -81,12 +77,17 @@ a.text-dark {
     text-decoration: none;
   }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+.container{
+    width:1200px;
+    border:1px solid var(--white);
+    max-width: 100%;
+    margin:50px auto 0;
+    display: grid;
+    grid-template-columns: 200px auto 300px;
+    padding:20px;
+    border-radius: 30px;
+    min-height: 80vh;
+}
 
 .carousel-inner {
     max-width: 100%; 
@@ -99,8 +100,7 @@ a.text-dark {
 	margin-top: 60px;
     height: auto; 
 	align-items: center;
-  }
-  
+}
   
 @media (max-width: 768px) {
     .carousel-inner {

@@ -58,27 +58,53 @@ buyButton.addEventListener('click', function() {
   document.querySelector('.popup').style.display = 'flex';
 });
 
+// Cerrar el popup al hacer clic en el botón de cerrar
+let closeButton = document.querySelector('.popup .close-button');
+closeButton.addEventListener('click', function() {
+  document.querySelector('.popup').style.display = 'none';
+});
+
+
 // Manejar el evento click en el botón de confirmar compra
 let confirmButton = document.querySelector('.popup .confirm-button');
 confirmButton.addEventListener('click', function(event) {
   event.preventDefault(); // Prevenir el envío del formulario
-  
+
   let firstName = document.getElementById('firstName').value;
   let lastName = document.getElementById('lastName').value;
   let termsAccepted = document.getElementById('terms').checked;
-  
+
   if (firstName && lastName && termsAccepted) {
     let doc = new jsPDF();
+    
+    // Agregar el nombre y apellido del usuario
+    doc.text(`COMPROBANTE COMERCIAL`, 20, 10);
     doc.text(`Nombre: ${firstName}`, 20, 20);
     doc.text(`Apellido: ${lastName}`, 20, 30);
-    doc.save('comprobante.pdf');
+    
+    // Agregar el total de la compra
+    let totalAmountElement = document.querySelector('.cart .total-amount');
+    let totalAmount = totalAmountElement.textContent;
+    doc.text(`Total: ${totalAmount}`, 20, 40);
+
+    // Agregar la imagen del logo
+    let logoImg = new Image();
+    logoImg.src = 'material/LOGO FINAL.png';
+    logoImg.onload = function() {
+      const logoWidth = 40; // Ancho de la imagen del logo en el PDF
+      const logoHeight = (logoImg.height * logoWidth) / logoImg.width; // Mantener la proporción de aspecto
+
+      doc.addImage(logoImg, 'PNG', 150, 10, logoWidth, logoHeight);
+      doc.save('comprobante.pdf');
+};
+
     alert('¡Gracias por tu compra!');
-    window.jsPDF = require('jspdf');
     document.querySelector('.popup').style.display = 'none';
   } else {
     alert('Por favor, completa todos los campos y acepta los términos y condiciones.');
   }
 });
+
 
 // Desactivar clic en elementos individuales del carrito
 let cartItems = document.querySelectorAll('.cart .item');

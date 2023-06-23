@@ -300,7 +300,7 @@ body {
   
 .cart .total {
     display: flex; 
-    margin-top: 200px;
+    margin-top: 0px;
     justify-content: space-between; 
     align-items: center; 
     padding: 20px; 
@@ -316,9 +316,8 @@ body {
     padding: 5px 10px;
     border: none;
     border-radius: 10px;
-  }
+}
   
-  /* ... otros estilos ... */
   
 @media screen and (max-width: 767px) {
     .cart .buy {
@@ -361,6 +360,26 @@ body {
   overflow-y: auto;
 }
 
+
+.popup-content .close-button {
+  position: absolute;
+  top:  -0.1px;
+  right: 0px;
+  z-index: 999; 
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+
 .popup-content h2 {
   margin-bottom: 20px;
   text-align: center;
@@ -378,6 +397,8 @@ body {
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
+  border-radius: 8px;
+
 }
 
 .popup-content button[type="submit"] {
@@ -396,3 +417,6 @@ body {
 .popup-content button[type="submit"]:focus {
   outline: none;
 }
+
+
+
